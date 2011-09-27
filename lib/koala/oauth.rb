@@ -19,8 +19,8 @@ module Koala
 
         if signed_cookie = cookie_hash["fbsr_#{@app_id}"]
           parse_signed_cookie(signed_cookie)
-        elsif unsigned_cookie = cookie_hash["fbs_#{@app_id}"]
-          parse_unsigned_cookie(unsigned_cookie)
+#        elsif unsigned_cookie = cookie_hash["fbs_#{@app_id}"]
+#          parse_unsigned_cookie(unsigned_cookie)
         end
       end
       alias_method :get_user_info_from_cookies, :get_user_info_from_cookie
